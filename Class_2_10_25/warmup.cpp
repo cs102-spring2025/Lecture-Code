@@ -1,6 +1,5 @@
 /**
  * Class code: Storage Duration and Scope
- * 
  * @file warmup.cpp
  * @author Karyn Doke
  * @date February 10, 2025
@@ -13,6 +12,29 @@ using namespace std;
 
 // Static global constant
 const int LARGE_NUMBER = 1000000;
+
+// function declaration
+string some_function(int upper_bound);
+// prints powers of 2 up to a limit and returns a generated string
+
+
+int main() {
+    // Automatic local variables
+    // Note: you can use the same name as locals in some_function
+    int power_of_two = 1024;
+    
+    cout << some_function(50) << endl;
+    cout << some_function(LARGE_NUMBER) << endl;
+    cout << some_function(power_of_two) << endl;
+    cout << some_function(40000000) << endl;
+
+    // Uncommenting this line will also cause an error since 'place' 
+    // is not available in the main function scope.
+    //cout << some_function(place) << endl;
+
+    return 0;
+}
+
 
 // The parameter upper_bound is automatic local
 /**
@@ -43,19 +65,3 @@ string some_function(int upper_bound) {
     return some_chars;
 }
 
-int main() {
-    // Automatic local variables
-    // Note: you can use the same name as locals in some_function
-    int power_of_two = 1024;
-    
-    cout << some_function(50) << endl;
-    cout << some_function(LARGE_NUMBER) << endl;
-    cout << some_function(power_of_two) << endl;
-    cout << some_function(40000000) << endl;
-
-    // Uncommenting this line will also cause an error since 'place' 
-    // is not available in the main function scope.
-    //cout << some_function(place) << endl;
-
-    return 0;
-}
