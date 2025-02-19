@@ -51,6 +51,7 @@ int main() {
 
     cout << "value at index 3: " << arr2[3] << endl;
     cout << "value at index 3: " <<  *(ptr3 + 3) << endl;
+    cout << "value at index 3: " << *(arr + 3);
     cout << "address at index 3: " << ptr3 + 3 << endl;
     cout << "address at index 3: " << arr2 + 3 << endl;
 
