@@ -41,20 +41,20 @@ class Student {
       }
 
       // setters
-      void set_name(string name) {
-        name = name;
+      void set_name(string new_name) {
+        name = new_name;
       }
 
-      void set_gpa(double gpa) {
-        gpa = gpa;
+      void set_gpa(double new_gpa) {
+        gpa = new_gpa;
       }
 
-      void set_math_grade(double math_grade) {
-        math_grade = math_grade;
+      void set_math_grade(double new_math_grade) {
+        math_grade = new_math_grade;
       }
 
-      void set_cs_grade(double cs_grade) {
-        cs_grade = cs_grade;
+      void set_cs_grade(double new_cs_grade) {
+        cs_grade = new_cs_grade;
       }
 
       // getters
