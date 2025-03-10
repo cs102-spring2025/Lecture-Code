@@ -3,7 +3,7 @@
 using namespace std;
 
 /* This is the maximum size of the stack, 
- *  similar to how we have a fixed/limited amount of memory
+ * similar to how we have a fixed/limited amount of memory
  */
 const int MAX_STACK_SIZE = 1000000; 
 
@@ -28,13 +28,17 @@ class Stack {
         /**
          * @brief Adds an item to the top of the stack
          * 
-         * @param item - the int that is added to the top of the stack
+         * Exercise: Make it graceful if there is an error
          */
         void push(int item) {
+            if (size < MAX_STACK_SIZE){
             stack[size] = item;
             size++;
             }
-    
+            else {
+                cout << "Stack is full!"; 
+            }
+            }
 
         /**
          * @brief Prints the stack sideways
@@ -54,7 +58,7 @@ class Stack {
          * 
          * @return int - what is on top of the stack
          */
-        int peek() {
+        int top() {
             return stack[size -1 ];
     
         }
@@ -65,10 +69,13 @@ class Stack {
          * 
          * Exercise: make it exit gracefully if there's an error
          */
-        int pop() {
-            size--;
-            return stack[size];
-
+        void pop() {
+            if (!empty()) {
+            size--;  
+            }
+            else {
+                cout << "Cannot pop an empty stack.";
+            }
         }
 
         /**
@@ -103,7 +110,7 @@ int main() {
     
     notable_dates.display();
     
-    cout << "Top of stack: " << notable_dates.peek() << endl;
+    cout << "Top of stack: " << notable_dates.top() << endl;
    
     notable_dates.pop();
     notable_dates.display();
@@ -111,5 +118,12 @@ int main() {
     cout << "Is the stack empty? " <<  notable_dates.empty() << endl;
     cout << "No the stack is of size " << notable_dates.get_size() << endl;
 
+  //  for (int i = 0; i < MAX_STACK_SIZE * 2; i++) {
+    //    notable_dates.push(i);
+   // }
+
+   // for (int i = 0; i < MAX_STACK_SIZE * 2; i++) {
+     //   notable_dates.pop();
+//}
 
 }
