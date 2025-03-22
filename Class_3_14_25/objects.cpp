@@ -4,35 +4,69 @@ using namespace std;
 const int RECORDS= 100; 
 
 class Student {
+    
+    private:
+        string name;    
+        int student_id;
+
     public:
+        /**
+         * @brief Construct a new Student object 
+         */
         Student(){
             name = "no name";
             student_id = 0;
         }
+        
+        /**
+         * @brief Construct a new Student object 
+         * @param initial_name 
+         * @param initial_id 
+         */
         Student(string initial_name, int initial_id) {
             name = initial_name;
             student_id = initial_id;
         }
+
+        /**
+         * @brief Get the name object
+         * @return string 
+         */
         string get_name() {
             return name;
         }
+        
+        /**
+         * @brief Get the student id object
+         * @return int 
+         */
         int get_student_id() {
             return student_id;
         }
+
+        /**
+         * @brief Set the name object 
+         * @param new_name 
+         */
         void set_name(string new_name) {
             name = new_name;
         }
+        
+        /**
+         * @brief display name and id of object 
+         */
         void display() {
             cout << name << ":" << student_id << endl;
         }
 
+        /**
+         * @brief change name and id of object 
+         * @param s 
+         * @param name 
+         */
         void change_info(Student &s, string name){
             s.set_name(name);
         }
-    
-        private:
-        string name;    
-        int student_id;
 
 };
 

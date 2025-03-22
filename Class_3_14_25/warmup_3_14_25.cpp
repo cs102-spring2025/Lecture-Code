@@ -5,6 +5,11 @@ using namespace std;
 const int RECORDS= 100; 
 
 class Student {
+    
+    private:
+        string name;    
+        int student_id;
+    
     public:
 
         /**
@@ -55,10 +60,6 @@ class Student {
         void display() {
             cout << name << ":" << student_id << endl;
         }
-    
-        private:
-        string name;    
-        int student_id;
 
 };
 
