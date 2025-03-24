@@ -1,10 +1,9 @@
 #include <iostream>
-
 using namespace std;
 
 const int NUMBERS_SIZE = 6;
 const int RGB_SIZE = 3;
-// Ch. 7.2
+
 /**
  * @brief Prints an array of ints in a nice format
  * 
