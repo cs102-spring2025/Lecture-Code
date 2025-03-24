@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2025
  * 
  */
+
 #include <iostream> 
 
 double totalCost(int numberPar, double pricePar);
