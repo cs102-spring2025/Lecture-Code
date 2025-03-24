@@ -1,8 +1,10 @@
 #include <iostream>
 #include <cmath>
 
-int main(){
-    const double COST_PER_SQ_FT = 10.50; // declare COST_PER_SQ_FT constant and cannot modify it
+int main() {
+
+    // declare COST_PER_SQ_FT constant and cannot modify it
+    const double COST_PER_SQ_FT = 10.50; 
     double budget, area, length_side;
 
     std::cout << "Enter the amount budgeted for your dog house $";
@@ -20,8 +22,9 @@ int main(){
     std::cout.setf(std::ios::showpoint); // decimal point will always be shown
     std::cout.precision(2); // set precision to 2 decimal places
 
-    // cout statement that follows this will output values of type double in ordinary notation, 
-    // exactly two digits after decimal point.
+    /* cout statement that follows this will output values of type double in ordinary notation, 
+    * exactly two digits after decimal point.
+    */
     std::cout << "For a price of $" << budget << std::endl
          << "I can build you a luxurious square dog house\n"
          << "that is " << length_side
