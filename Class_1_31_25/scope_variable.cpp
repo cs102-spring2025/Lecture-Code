@@ -1,10 +1,11 @@
 #include <iostream>
 
 double estTotal(int minPeas, int maxPeas, int podCount);
-//Returns an estimate of the total number of peas harvested.
-//The formal parameter podCount is the number of pods.
-//The formal parameters minPeas and maxPeas are the minimum
-//and maximum number of peas in a pod.
+/* Returns an estimate of the total number of peas harvested.
+* The formal parameter podCount is the number of pods.
+* The formal parameters minPeas and maxPeas are the minimum
+* and maximum number of peas in a pod.
+*/
 
 int main( )
 {
