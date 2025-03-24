@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+// controls program
+
 int main() {
     std::string middleName, petName;
     std::string alterEgoName;
