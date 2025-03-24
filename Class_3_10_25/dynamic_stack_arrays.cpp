@@ -3,6 +3,7 @@
  using namespace std;
  
  /**
+  * @class DynamicStack
   * @brief Stack implemented with dynamic array
   * 
   */
