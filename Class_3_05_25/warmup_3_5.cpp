@@ -2,6 +2,12 @@
 #include <string>
 using namespace std;
 
+/**
+ * @class EmployeeRecord
+ * @brief A class that creates an employee record
+ * Each employee record contains a name and an id
+ * 
+ */
 class EmployeeRecord { // naming convention
     public:
         EmployeeRecord(string initial_name, int initial_id){ // constructor with two param
