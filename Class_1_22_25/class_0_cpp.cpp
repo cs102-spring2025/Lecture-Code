@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-//this is my comment
+//this controls the main program
+
 int main() {
   std::string my_string = "Hello 102 Class!";
   std::string reversed_string = "";
