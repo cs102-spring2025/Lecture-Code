@@ -10,6 +10,7 @@ using namespace std;
  * practice especially in header files --> increases the risk
  * of collisions with your own symbols.
  */
+
 int main() {
    string test = "";
    cout << "Please enter a string: ";
