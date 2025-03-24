@@ -2,8 +2,10 @@
 #include <string>
 using namespace std;
 
-/* Rewriting Student class */
-
+/**
+ * @class Student
+ * @brief A class representing a student
+ */
 class Student { 
     public: 
      
