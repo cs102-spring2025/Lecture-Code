@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @class Node 
+ * @brief A class that implements a node
+ * 
+ * Each node holds an integer data value and a pointer to the next node.
+ */
 class Node {
 private:
     int data;
