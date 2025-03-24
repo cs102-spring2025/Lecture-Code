@@ -2,8 +2,10 @@
 #include <string>
 using namespace std;
 
-/* This is the class declaration for a student object */
-
+/**
+ * @class Student
+ * @brief A class representing a student
+ */
 class Student {
     private: //accessible within the class only
         // data members
