@@ -8,7 +8,8 @@ using namespace std;
 const int MAX_STACK_SIZE = 1000000; 
 
 /**
- * @brief Stack class, implements a stack using an array. Only takes ints.
+ * @class Stack
+ * @brief A class that implements a stack using an array. Only takes ints.
  * 
  */
 class Stack { 
