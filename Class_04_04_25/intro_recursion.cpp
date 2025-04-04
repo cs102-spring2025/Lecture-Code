@@ -41,15 +41,6 @@ void writeVertical(int n) {
         cout << (n % 10) << endl;
     }
 
-    /**
-     * n = 941
-     * 941 / 10  --> n = 94 goes to stack
-        * 94 / 10 --> n = 9 goes to the stack
-            * 9 / 10 --> print 9
-        * 94 % 10 --> print 4
-        * 941 % 10 --> print 1
-     */
-
 
 }
 
