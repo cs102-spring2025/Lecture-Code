@@ -1,7 +1,14 @@
 #include <iostream>
 using namespace std;
 
-// Method to merge two halves
+/**
+ * @brief 
+ * 
+ * @param arr 
+ * @param left 
+ * @param mid 
+ * @param right 
+ */
 void merge(int arr[], int left, int mid, int right)
 {   
     // find number of elements in left array
@@ -57,7 +64,13 @@ void merge(int arr[], int left, int mid, int right)
     delete[] Right;
 }
 
-// Method to divide and sort the array
+/**
+ * @brief 
+ * 
+ * @param arr 
+ * @param left 
+ * @param right 
+ */
 void sort(int arr[], int left, int right)
 {
     if (left < right)

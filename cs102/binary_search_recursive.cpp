@@ -46,7 +46,7 @@ int main( )
     int key, location = 0;
     bool found = false;
 
-    // sort array
+    // sort array using sort method from std library
     sort(a, a + sizeof a / sizeof a[0]);
     
     for (int i = 0; i < ARRAY_SIZE; i++ ) {
