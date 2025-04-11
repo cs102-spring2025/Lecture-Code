@@ -14,7 +14,7 @@ const int ARRAY_SIZE = 10;
  * @param location 
  */
 void search(const int a[], int first, int last, int key, bool& found, int& location)
-{
+{   
     int mid = 0;
     if (first > last)
     {
@@ -34,6 +34,7 @@ void search(const int a[], int first, int last, int key, bool& found, int& locat
         }
         else if (key > a[mid])
         {
+            cout << endl;
             search(a, mid + 1, last, key, found, location);
         }
     }
@@ -41,7 +42,7 @@ void search(const int a[], int first, int last, int key, bool& found, int& locat
 
 int main( )
 {
-    int a[ARRAY_SIZE] = {44, 51, 3, 10, 0, 9, 22, 48, 50, 100};
+    int a[ARRAY_SIZE] = {44, 51, 3, 10, 0, 9, 11, 48, 34, 2};
     const int finalIndex = ARRAY_SIZE - 1;
     int key, location = 0;
     bool found = false;
@@ -49,7 +50,8 @@ int main( )
     // sort array using sort method from std library
     sort(a, a + sizeof a / sizeof a[0]);
     
-    for (int i = 0; i < ARRAY_SIZE; i++ ) {
+   cout << "Sorted Array: ";
+   for (int i = 0; i < ARRAY_SIZE; i++ ) {
         cout << a[i] << " ";
     }
     cout << endl;
