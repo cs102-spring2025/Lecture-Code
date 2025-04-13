@@ -64,7 +64,6 @@ int main( )
         cout << key << " is in index location " << location << endl;
     else
         cout << key << " is not in the array." << endl;
-
     return 0;
 }
 
