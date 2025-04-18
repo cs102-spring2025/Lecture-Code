@@ -55,9 +55,9 @@ void BinarySearchTree::recursive_destructor(BinaryNode* curr){
     }
 
     // Recursive cases: pre-order traversal to delete each node
-        cout << "About to delete node with data: " << curr->_data << endl;
         recursive_destructor(curr->_left);
         recursive_destructor(curr->_right);
+        cout << "About to delete node with data: " << curr->_data << endl;
         delete curr;
 
 }

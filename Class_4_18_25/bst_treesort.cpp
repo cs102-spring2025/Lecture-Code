@@ -92,7 +92,6 @@ void BinarySearchTree::recursive_destructor(BinaryNode* curr){
     // Recursive cases: post-order traversal to delete each node
         recursive_destructor(curr->_left);
         recursive_destructor(curr->_right);
-        cout << "About to delete node with data: " << curr->_data << endl;
         delete curr;
 
 }
@@ -103,6 +102,11 @@ int main () {
     
     vector<int> nums = {5, 2, -9, 0, 32, 31, 28, -24, -3, 54, -2, -42};
     
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i]<< ", ";
+    }
+
+    cout << endl;
     tree_sort(nums);
 
     for (int i = 0; i < nums.size(); i++) {
