@@ -59,7 +59,7 @@ class Dog : public Animal {
         Dog(string name) : Animal(name) {}
 
         /**
-         * @brief Overloads the make_sound method from the Animal class
+         * @brief Overrides the make_sound method from the Animal class
          * Dogs woof!
          */
         void make_sound() const {
