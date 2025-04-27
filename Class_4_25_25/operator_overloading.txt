@@ -1,0 +1,74 @@
+There are many operators available that work on built-in types, like int and double.
+Operator overloading means the process of creating new versions of these operators 
+for use with user-defined types.
+
+•	An operator in C++ is just a special kind of function.  
+    Overloading an operator simply involves writing a function.
+
+•	C++ already does some operator overloading implicitly on built-in types.  
+    Consider the fact that the + operator already works for ints, floats, doubles, 
+    and chars. There is really a different version of the + operator for each type.
+
+•	Operator overloading is done for the purpose of using familiar operator
+    notation on new user-defined types.
+
+Rules and Facts:
+•	Overloading an operator cannot change its precedence.
+•	Overloading an operator cannot change its "arity" (i.e. number of operands)
+•	It is not possible to create new operators -- only new versions of existing ones.
+
+
+Operator overloads can be written as member functions of a class or as friend functions.
+
+A simple arithmetic operator overload:
+
+int x = 3, y = 6, z; 
+ float a = 3.4, b = 2.1, c; 
+ z = x + y; 
+ c = a / b; 
+
+Consider the idea of doing arithmetic on Fraction objects. How?
+
+Fraction n1, n2, n3;
+n3 = n1 + n2;  // is this legal?
+
+How do we add Fraction objects?
+
+Fraction Sum(Fraction f1, Fraction f2); // + notation may be more convenient
+
+Format:
+Since an operator is a function, we declare and define one just like we would 
+a function.  A declaration of an operator overload requires a name (which is the 
+operator symbol), a return type, and a parameter list.  In addition, we need 
+the keyword operator.
+
+
+ReturnType operator OperatorName(ParameterList)
+
+Example of the Fraction class for +:
+
+Fraction operator+(Fraction f1, Fraction f2); 
+
+Full function:
+
+3/4 + 4/5 
+
+Fraction operator+(Fraction f1, Fraction f2) 
+ { 
+   Fraction r;   // declare a Fraction to hold the result 
+
+   // load result Fraction with sum of adjusted numerators 
+   r.numerator = (f1.numerator*f2.denominator) 
+                  + (f2.numerator*f1.denominator); 
+
+   // load result with the common denominator 
+   r.denominator = f1.denominator * f2.denominator; 
+
+   return r;    // return the result Fraction 
+ } 
+
+
+Once this operator overload is defined, then the following is legitimate:
+ 
+ Fraction n1, n2, n3; 
+ n3 = n1 + n2;        // now it is legal! 

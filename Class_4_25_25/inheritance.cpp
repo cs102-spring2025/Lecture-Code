@@ -63,7 +63,7 @@ class Dog : public Animal {
          * Dogs woof!
          */
         void make_sound() const {
-            cout << "Woof!!!" << endl;
+            cout << "Woof!" << " my name is " << _name << endl;
         }
 
 };
@@ -87,26 +87,21 @@ public:
     }
 
     /**
-     * @brief Overwrites the make sound
+     * @brief Overrides the make sound
      * 
      */
     void make_sound() const {
-        //cout << "Meow!" << " my name is " << get_name();
-        cout << "Meow!" << " my name is " << _name;
-        cout << " and my collar color is " << _collar_color << endl;
+        cout << "Meow!" << " my name is " << _name <<  " and my collar color is " << _collar_color << endl;
     }
 };
 
-// Runs everything
+
 int main() {
     Dog goober("Goober");
-    //goober.make_sound();
-
     Cat mila("Mila", "pink");
-    Cat frankie("Frankie", "teal");
-
-    //mila.make_sound();
-    //frankie.make_sound();
+  
+    mila.make_sound();
+    goober.make_sound();
 
     //Animal m = mila;
     //cout << m.get_name() << endl;
@@ -136,7 +131,7 @@ int main() {
         pet->make_sound();
     }*/
 
-   mila.make_sound();
+   //mila.make_sound();
 
    //Doesn't work because _name is protected! You can access it from the subclasses and superclass
    //but not from outside the class!

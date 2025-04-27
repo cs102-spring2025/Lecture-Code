@@ -1,0 +1,17 @@
+•	Data hiding is a fundamental concept of OOP.
+
+•	It restricts the access of private members from outside the class.
+
+•	Sometimes you have functions that do not belong to the class (defined outside that class scope) 
+    but need access to some private or protected members of the class.
+
+•	A friend function can access private and protected data of a class.
+
+•	We declare a friend function using the friend keyword inside the body of the class. 
+
+
+class className {
+     ... ... ...
+     friend returnType function_name(arguments)
+     ... ... ...
+}
